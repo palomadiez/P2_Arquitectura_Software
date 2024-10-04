@@ -15,7 +15,7 @@
             SpeedHistory = new List<float>();
         }
 
-        public string TriggerRadar(Vehicle vehicle)
+        public string TriggerRadar(VehicleWithPlate vehicle)
         {
             plate = vehicle.GetPlate();
             speed = vehicle.GetSpeed();

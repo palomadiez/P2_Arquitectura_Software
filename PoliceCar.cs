@@ -19,7 +19,7 @@ namespace Practice1
             this.policeStation = policeStation;
         }
 
-        public void UseRadar(Vehicle vehicle)
+        public void UseRadar(VehicleWithPlate vehicle)
         {
             if (isPatrolling)
             {
@@ -114,6 +114,10 @@ namespace Practice1
                 {
                     Console.WriteLine(speed);
                 }
+            }
+            else
+            {
+                Console.WriteLine("No history to show. This car is not equipped with a radar.");
             }
         }
     }
